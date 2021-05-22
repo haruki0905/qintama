@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  word: MyText
+  color_code: MyString
+  coordinate_x: 1
+  coordinate_y: 1
+  site: one
+  target_site_id: MyString
+  user: one
+
+two:
+  word: MyText
+  color_code: MyString
+  coordinate_x: 1
+  coordinate_y: 1
+  site: two
+  target_site_id: MyString
+  user: two

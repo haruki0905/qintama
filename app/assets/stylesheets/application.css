@@ -13,3 +13,22 @@
  *= require_tree .
  *= require_self
  */
+ html {
+    height: 100%;
+  }
+  
+  body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  #screen {
+    height: 100%;
+  }
+
+ #doodle_input
+{
+    background: white;
+    opacity: 0.5;
+    border: none;
+}

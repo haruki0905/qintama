@@ -1,9 +1,10 @@
 class SitesController < ApplicationController
+  before_action :sign_in_required
   before_action :set_site, only: %i[ show edit update destroy ]
 
   # GET /sites or /sites.json
   def index
-    @sites = Site.all
+    redirect_to site_path(Site.find(current_user.site_id).public_uid)
   end
 
   # GET /sites/1 or /sites/1.json
@@ -17,6 +18,7 @@ class SitesController < ApplicationController
 
   # GET /sites/1/edit
   def edit
+    redirect_to site_path(Site.find(current_user.site_id).public_uid) unless false # admin_userの場合遷移できるものとする
   end
 
   # POST /sites or /sites.json
